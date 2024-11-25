@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #2d11badd, #007bff);
+  color: #fff;
+}
+
+.logo {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  border: 10px solid #271ced;
+  background-color: #ffffff; /* White inside the circle */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 3s infinite linear;
+}
+
+.line {
+  width: 60%;
+  height: 10px;
+  background-color: #1f31daf5;
+  position: absolute;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
